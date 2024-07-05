@@ -472,7 +472,7 @@
         </div>
         <div class="subscribe-container">
           <p class="subscribe-paragraph">Subscribe</p>
-          <form class="form-footer" name="issue_report_form" autocomplete="off">
+          <form class="form-footer">
             <label class="lblfooter">
               <input
                 name="email"
@@ -493,7 +493,40 @@
 
     <div class="modal-overlay">
       <div class="modal">
-        <p>Leave your contacts and we will call you back</p>
+        <button class="close-btn">
+          <svg width="24" height="24" class="close-icon">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <p class="paragraph-box">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="form-box">
+          <label class="label-name">
+            Name
+            <input type="text" name="name" class="input-name" />
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Comment
+            <input
+              type="text"
+              name="comment"
+              placeholder="Text input"
+              class="comment-input"
+            />
+          </label>
+          <input type="checkbox" name="checkbox" />
+          <label>I accept the terms and conditions of the Privacy Policy</label>
+          <button type="submit" value="Send" class="last-button">Send</button>
+        </form>
       </div>
     </div>
   </body>
