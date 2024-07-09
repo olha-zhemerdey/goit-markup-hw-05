@@ -694,11 +694,13 @@ input::placeholder {
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: auto;
   margin-left: auto;
+  border-radius: 4px;
 }
 
 .last-button:hover {
@@ -734,10 +736,15 @@ input::placeholder {
   fill: transparent;
 }
 
-.svg-checkbox:checked {
-  background-color: #404bbf;
+.privacy-policy {
+  line-height: 1.33;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
 }
 
-.privacy-policy {
-  color: #4d5ae5;
+input:checked + label > span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
